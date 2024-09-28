@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--untuk search-icon-->
+</head>
+<body>
+    <!-- Tambahkan kode kalian di sini -->
+    <nav>
+        <a id="link" href="https://skilvul.com">
+            <img id="link-img" src="https://drive.google.com/thumbnail?id=1FoyUxCGqoXnaUhNmX4oilY3CSxvUV3hm" style="width: 46%;">
+        </a>
+        <subnav>
+            <input id="search" placeholder="Cari...">
+            <button id="search-icon" class="fa fa-search" onclick="SearchBar()"></button>
+            <a href="https://skilvul.com">Produk</a>
+            <a>Daftar</a>
+        </subnav>
+    </nav>
+    <main id="main">
+        <p id="headline">Mewah, Elegan, Terjangkau</p>
+        <p id="description">100% bahan daur ulang hasil sampah</p>
+        <div id="daftar-produk">
+            <b>Keunggulan</b>
+            <div>
+                <div class="daftar-produk-img-crop"><img src="https://blackdoctor.org/wp-content/uploads/2015/10/donnyblaylock-1.jpg" width="100%"></div>
+                <div class="daftar-produk-img-crop"><img src="https://benle.net/wp-content/uploads/2024/03/Mens-Fashion-Street-Style.webp" width="200%" style="margin-left: -80%;"></div>
+                <div class="daftar-produk-img-crop"><img src="https://www.usmagazine.com/wp-content/uploads/2022/09/City-Girl-Fashion-Stock-Photo.jpg?crop=0px%2C49px%2C2000px%2C1131px&resize=1000%2C563&quality=86&strip=all" width="200%"></div>
+                <div class="daftar-produk-img-crop"><img src="https://img.freepik.com/free-photo/fashion-portrait-young-elegant-woman_1328-2691.jpg?t=st=1727522239~exp=1727525839~hmac=9c5ade30cc3f4e5414e2f04b5e80f104f2b60bf3be632d0bc4895b46f5845f81&w=740" width="100%" style="margin-top: -23%;"></div>
+                <div class="daftar-produk-img-crop"><img src="https://img.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_23-2149409723.jpg?t=st=1727521589~exp=1727525189~hmac=999c8a5df6546e27ce1f85f86659ff4166d7075a6955d55dadb50cbee2f33160&w=826" width="160%" style="margin-left: -29%;"></div>
+                <div class="daftar-produk-img-crop"><img src="https://static.honeykidsasia.com/wp-content/uploads/2016/02/teens-clothes-shopping-singapore-uniqlo-900x643.jpg" width="150%" style="margin-left: -27%;"></div>
+            </div>
+        </div>
+        <div id="CTA">
+            <a>
+                Mau fashion rumahan?<br>
+                Gabung sekarang dan kami pandu!
+            </a>
+            <button onclick="CTA()">Gabung</button>
+        </div>
+
+        <footer>
+            <a>Mitra:</a>
+            <div id="footer-img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg" width="6%" height="6%">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Zalora_Group_logo.svg" width="10%" height="100%" class="svg-white-color">
+            </div>
+            <div>
+                <a>
+                    CEO: Azhar Zulkarnaen Adinata<br>
+                    Pendiri: Skilvul
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <div id="formulir">
+        <a id="form-close" onclick="FormClose()">&#x2716</a>
+        <img class="form-img" src="https://www.color-meanings.com/wp-content/uploads/black-color-meaning-symbolism-infographic-1024x768.png" width="50%">
+        <form id="form-isian"><br>
+            <input id="name" placeholder="Nama"><br>
+            <input id="city" placeholder="Kota"><br>
+            <input id="email" placeholder="Email"><br>
+            <input id="zip-code" type="number" placeholder="Zip code"><br>
+            <label id="check" onclick="LabelChecked()">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+            <input id="status" type="checkbox"><br>
+            <button id="submit-form" type="submit">Submit</button><br>
+            <div id="warning"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

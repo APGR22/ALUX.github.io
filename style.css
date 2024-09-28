@@ -1,0 +1,334 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+/*define*/
+
+/*nav*/
+
+@keyframes nav-onscroll-animation
+{
+    0% {font-size: 2vw;}
+    100% {font-size: 1.4vw;}
+}
+
+@keyframes nav-normal-animation
+{
+    0% {font-size: 1.4vw;}
+    100% {font-size: 2vw;}
+}
+
+.nav-onscroll
+{
+    font-size: 1.4vw;
+    animation: nav-onscroll-animation;
+    animation-duration: 200ms;
+}
+.nav-normal
+{
+    font-size: 2vw;
+    animation: nav-normal-animation;
+    animation-duration: 200ms;
+}
+
+nav
+{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /*agar paling depan*/
+}
+
+subnav
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav > a, nav > a:link, nav > a:visited,
+subnav > a, subnav > a:link, subnav > a:visited
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+subnav > a, subnav > a:link, subnav > a:visited
+{
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 0 2%;
+}
+
+#link
+{
+    display: flex;
+}
+
+@keyframes link-img-onscroll-animation
+{
+    0% {width: 46%;}
+    100% {width: 37%;}
+}
+@keyframes link-img-normal-animation
+{
+    0% {width: 37%;}
+    100% {width: 46%;}
+}
+
+.link-img-onscroll
+{
+    animation: link-img-onscroll-animation;
+    animation-duration: 200ms;
+}
+.link-img-normal
+{
+    animation: link-img-normal-animation;
+    animation-duration: 200ms;
+}
+
+subnav > button
+{
+    font-size: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 2% 1% 2% 1%;
+}
+#search-icon
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes search-bar-open-animation
+{
+    0% {width: 0;}
+    100% {width: 30%;}
+}
+
+@keyframes search-bar-close-animation
+{
+    0% {width: 30%;}
+    100% {width: 0%;}
+}
+
+.search-bar-open
+{
+    animation: search-bar-open-animation;
+    animation-duration: 1s;
+}
+.search-bar-close
+{
+    animation: search-bar-close-animation;
+    animation-duration: 1s;
+}
+
+#search
+{
+    width: 30%;
+    font-size: 80%;
+}
+
+nav > a:hover,
+subnav > a:hover
+{
+    text-decoration: underline;
+}
+
+/*main*/
+
+main
+{
+    margin-top: 7%;
+}
+
+#headline
+{
+    text-align: center;
+    font-size: 225%;
+    margin-top: 15%;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#description
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15%;
+    font-size: 125%;
+}
+
+#CTA
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 0;
+}
+#CTA > a
+{
+    margin: 1% 0;
+}
+#CTA > button
+{
+    font-size: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+}
+#CTA > button:hover
+{
+    background-color: rgb(33, 33, 33);
+}
+
+#daftar-produk
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2% 0;
+    font-size: 3vw;
+}
+#daftar-produk > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.daftar-produk-img-crop
+{
+    flex: 1 0 25%;
+    margin: 1% 2%;
+    cursor: pointer;
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+}
+
+footer
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    /* margin-top: 5%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: solid 1vw rgb(0, 0, 0);
+}
+footer > a
+{
+    font-size: 2vw;
+}
+footer > a, footer > div
+{
+    margin: 1% 0;
+}
+#footer-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-img > img
+{
+    margin: 0 0.5%;
+}
+
+.svg-white-color
+{
+    /*di generate dengan alat https://isotropic.co/tool/hex-color-to-css-filter */
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(77deg) brightness(107%) contrast(102%);
+}
+
+/*form*/
+
+@keyframes formulir-muncul-animation
+{
+    0% {display: flex; opacity: 0;}
+    100% {display: flex; opacity: 1;}
+}
+@keyframes formulir-hilang-animation
+{
+    0% {display: flex; opacity: 1;}
+    100% {display: flex; opacity: 0;}
+}
+
+.formulir-muncul
+{
+    animation: formulir-muncul-animation;
+    animation-duration: 500ms;
+}
+.formulir-hilang
+{
+    animation: formulir-hilang-animation;
+    animation-duration: 500ms;
+}
+
+#formulir
+{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 0.125vw;
+    border-radius: 1vw;
+    width: 80%;
+    position: fixed;
+    top: 20%;
+    left: 11%;
+    user-select: none;
+}
+.form-img
+{
+    border-radius: 0.9vw 0 0 0.9vw;
+}
+
+#submit-form
+{
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    border: solid 0.1vw rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    font-weight: 20;
+}
+#submit-form:active
+{
+    background-color: rgb(33, 33, 33);
+}
+
+#form-close
+{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+#warning
+{
+    color: rgb(255, 0, 0);
+}
