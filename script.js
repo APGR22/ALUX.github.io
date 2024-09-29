@@ -54,6 +54,7 @@ const nav = document.querySelector("nav")
 const link_img = document.getElementById("link-img")
 const search = document.getElementById("search")
 const main = document.getElementById("main")
+const footer = document.querySelector("footer")
 const form = document.getElementById("formulir")
 const form_name = document.getElementById("name")
 const form_city = document.getElementById("city")
@@ -102,7 +103,7 @@ function FormClose()
     form.onanimationend = function()
     {
         form.style.display = "none"
-        nav.style.filter = main.style.filter = "none"
+        footer.style.filter = nav.style.filter = main.style.filter = "none"
         main.style.pointerEvents = "auto"
         main.style.marginLeft = "0"
         main.style.marginTop = "6.48%"
@@ -127,7 +128,7 @@ function CTA()
     form.style.display = "flex"
     form.style.justifyContent = "space-between"
     form.style.alignItems = "center"
-    nav.style.filter = main.style.filter = "blur(3px)"
+    footer.style.filter = nav.style.filter = main.style.filter = "blur(3px)"
     main.style.pointerEvents = "none"
     document.body.style.overflow = "hidden"
 
