@@ -19,33 +19,63 @@
             <input id="search" placeholder="Cari...">
             <button id="search-icon" class="fa fa-search" onclick="SearchBar()"></button>
             <a href="https://skilvul.com">Produk</a>
-            <a>Daftar</a>
+            <a href="https://skilvul.com">Tentang</a>
+            <a onclick="CTA()" id="nav-gabung">Gabung</a>
         </subnav>
     </nav>
     <main id="main">
-        <p id="headline">Mewah, Elegan, Terjangkau</p>
-        <p id="description">100% bahan daur ulang hasil sampah</p>
-        <div id="daftar-produk">
-            <b>Keunggulan</b>
+        <div id="headline-container">
+            <div id="headline-img">
+                <div class="headline-img-crop"><img src="https://datatopics.worldbank.org/what-a-waste/img/v3_waste_disposal_site.jpg" width="122%" style="margin-left: -10%;"></div>
+                <div class="headline-img-crop"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="122%" style="margin-left: -15%;"></div>
+            </div>
+            <p id="description">
+                <span class="headline-keburukan">Tidak bernilai </span>
+                <span class="headline-kebaikan">menjadi bernilai</span>
+                <br>
+                <span class="headline-description">Sampah merupakan 
+                    <span class="color-white-bg-red">kesalahan</span>
+                </span>
+            </p>
+        </div>
+        <div id="rangkuman">
+            <p>
+                Sampah merupakan benda tidak berguna dan tidak disukai bagi masyarakat.<br>
+                Sebagian besar masyarakat <span class="color-white-bg-red">lebih mempedulikan diri</span> mereka sendiri<br>
+                dibanding lingkungan.
+            </p>
+            <p>
+                Kami, sekelompok pemuda desainer,<br>
+                ingin menunjukkan pada dunia bahwa mereka <span class="color-white-bg-red">salah!</span><br>
+                Kami akan membuat mereka tidak sadar bahwa mereka<br>
+                menggunakan apa yang mereka tidak sukai.
+            </p>
+            <p>
+                Kami membuat <span class="color-white-bg-black">fashion</span> untuk<br>
+                meningkatkan kepercayaan diri dan mendukung lingkungan.
+            </p>
+        </div>
+        <div id="hasil">
+            <b>Hasil</b>
             <div>
-                <div class="daftar-produk-img-crop"><img src="https://blackdoctor.org/wp-content/uploads/2015/10/donnyblaylock-1.jpg" width="100%"></div> <!--https://blackdoctor.org/donnell-blaylock-jr-model-real-estate-agent/-->
-                <div class="daftar-produk-img-crop"><img src="https://benle.net/wp-content/uploads/2024/03/Mens-Fashion-Street-Style.webp" width="200%" style="margin-left: -80%;"></div> <!--https://benle.net/mens-fashion-street-style-urban-trendsetting-guide/-->
-                <div class="daftar-produk-img-crop"><img src="https://www.usmagazine.com/wp-content/uploads/2022/09/City-Girl-Fashion-Stock-Photo.jpg?crop=0px%2C49px%2C2000px%2C1131px&resize=1000%2C563&quality=86&strip=all" width="200%"></div> <!--https://www.usmagazine.com/shop-with-us/news/15-fashion-pieces-for-city-girl-fall-style/-->
-                <div class="daftar-produk-img-crop"><img src="https://img.freepik.com/free-photo/fashion-portrait-young-elegant-woman_1328-2691.jpg?t=st=1727522239~exp=1727525839~hmac=9c5ade30cc3f4e5414e2f04b5e80f104f2b60bf3be632d0bc4895b46f5845f81&w=740" width="100%" style="margin-top: -23%;"></div> <!--https://www.freepik.com/free-photo/fashion-portrait-young-elegant-woman_6022015.htm#page=2&query=fashion&position=41&from_view=keyword&track=ais_hybrid&uuid=6c3cee45-39b6-45b5-be8a-8ef7b7eecba2-->
-                <div class="daftar-produk-img-crop"><img src="https://img.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_23-2149409723.jpg?t=st=1727521589~exp=1727525189~hmac=999c8a5df6546e27ce1f85f86659ff4166d7075a6955d55dadb50cbee2f33160&w=826" width="160%" style="margin-left: -29%;"></div> <!--https://www.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_26411559.htm#query=fashion&position=3&from_view=keyword&track=ais_hybrid&uuid=6c3cee45-39b6-45b5-be8a-8ef7b7eecba2-->
-                <div class="daftar-produk-img-crop"><img src="https://static.honeykidsasia.com/wp-content/uploads/2016/02/teens-clothes-shopping-singapore-uniqlo-900x643.jpg" width="150%" style="margin-left: -27%;"></div> <!--https://honeykidsasia.com/shopping-boys-girls-tweens-teens-clothes-singapore/-->
+                <div><img src="https://blackdoctor.org/wp-content/uploads/2015/10/donnyblaylock-1.jpg" width="100%"></div> <!--https://blackdoctor.org/donnell-blaylock-jr-model-real-estate-agent/-->
+                <div><img src="https://benle.net/wp-content/uploads/2024/03/Mens-Fashion-Street-Style.webp" width="200%" style="margin-left: -80%;"></div> <!--https://benle.net/mens-fashion-street-style-urban-trendsetting-guide/-->
+                <div><img src="https://www.usmagazine.com/wp-content/uploads/2022/09/City-Girl-Fashion-Stock-Photo.jpg?crop=0px%2C49px%2C2000px%2C1131px&resize=1000%2C563&quality=86&strip=all" width="200%"></div> <!--https://www.usmagazine.com/shop-with-us/news/15-fashion-pieces-for-city-girl-fall-style/-->
+                <div><img src="https://img.freepik.com/free-photo/fashion-portrait-young-elegant-woman_1328-2691.jpg" width="100%" style="margin-top: -23%;"></div> <!--https://www.freepik.com/free-photo/fashion-portrait-young-elegant-woman_6022015.htm#page=2&query=fashion&position=41&from_view=keyword&track=ais_hybrid&uuid=6c3cee45-39b6-45b5-be8a-8ef7b7eecba2-->
+                <div><img src="https://img.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_23-2149409723.jpg" width="160%" style="margin-left: -29%;"></div> <!--https://www.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_26411559.htm#query=fashion&position=3&from_view=keyword&track=ais_hybrid&uuid=6c3cee45-39b6-45b5-be8a-8ef7b7eecba2-->
+                <div><img src="https://static.honeykidsasia.com/wp-content/uploads/2016/02/teens-clothes-shopping-singapore-uniqlo-900x643.jpg" width="150%" style="margin-left: -27%;"></div> <!--https://honeykidsasia.com/shopping-boys-girls-tweens-teens-clothes-singapore/-->
             </div>
         </div>
         <div id="CTA">
             <a>
-                Mau fashion rumahan?<br>
-                Gabung sekarang dan kami pandu!
+                Mau berkontribusi juga?<br>
+                Gabung sekarang!
             </a>
             <button onclick="CTA()">Gabung</button>
         </div>
 
         <footer>
-            <a>Mitra:</a>
+            <a>Didukung oleh:</a>
             <div id="footer-img">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg" width="6%" height="6%">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Zalora_Group_logo.svg" width="10%" height="100%" class="svg-white-color">

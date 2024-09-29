@@ -139,11 +139,11 @@ function CTA()
 
 window.onscroll = function()
 {
-    const di_scroll = document.documentElement.scrollTop > 10
+    const kondisi = document.documentElement.scrollTop > 10
     const ukuran_normal = link_img.style.width === "46%"
     const ukuran_kecil = link_img.style.width === "37%"
 
-    if (di_scroll && ukuran_normal)
+    if (kondisi && ukuran_normal)
     {
         nav.classList.add("nav-onscroll")
         nav.classList.remove("nav-normal")
@@ -152,7 +152,7 @@ window.onscroll = function()
         link_img.classList.remove("link-img-normal")
         link_img.style.width = "37%"
     }
-    else if (!di_scroll && ukuran_kecil)
+    else if (!kondisi && ukuran_kecil)
     {
         nav.classList.add("nav-normal")
         nav.classList.remove("nav-onscroll")
@@ -187,3 +187,45 @@ function SearchBar()
     SearchBarOpen = !SearchBarOpen
 }
 search.style.visibility = "hidden"
+
+function Set2CenterWidth(element)
+{
+    const ParentLeft = element.parentElement.offsetLeft
+    const ParentWidthLeftOutsideContent = element.parentElement.clientLeft
+    const ParentLeftContent = ParentLeft + ParentWidthLeftOutsideContent
+    const ParentWidthContent = element.parentElement.clientWidth
+    const Width = element.offsetWidth
+
+    const ResultLeftInContent = (ParentWidthContent/2) - (Width/2)
+
+    const result = ParentLeftContent + ResultLeftInContent
+
+    element.style.left = String(result) + "px"
+
+    // element.style.left = String(50 - (width_persen / 2)) + "%"
+    // console.log(element.parentElement.clientWidth, document.body.clientWidth, element.parentElement.clientLeft)
+}
+function Set2CenterHeight(element)
+{
+    const ParentTop = element.parentElement.offsetTop
+    const ParentHeightTopOutsideContent = element.parentElement.clientTop
+    const ParentTopContent = ParentTop + ParentHeightTopOutsideContent
+    const ParentHeightContent = element.parentElement.clientHeight
+    const Height = element.offsetHeight
+
+    const ResultTopInContent = (ParentHeightContent/2) - (Height/2)
+
+    const result = ParentTopContent + ResultTopInContent
+
+    element.style.top = String(result) + "px"
+
+    // let height = element.parentElement.clientHeight / 100 * value
+    // element.style.top = String(height) + "px"
+}
+
+document.body.onresize = function()
+{
+    Set2CenterWidth(document.getElementById("description"))
+    Set2CenterHeight(document.getElementById("description"))
+}
+document.body.onresize() //terapkan perubahan pertama kali
