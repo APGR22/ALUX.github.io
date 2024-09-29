@@ -163,7 +163,6 @@ window.onscroll = function()
         link_img.style.width = "46%"
     }
 }
-window.onscroll()
 
 let SearchBarOpen = true;
 function SearchBar()
@@ -202,9 +201,6 @@ function Set2CenterWidth(element)
     const result = ParentLeftContent + ResultLeftInContent
 
     element.style.left = String(result) + "px"
-
-    // element.style.left = String(50 - (width_persen / 2)) + "%"
-    // console.log(element.parentElement.clientWidth, document.body.clientWidth, element.parentElement.clientLeft)
 }
 function Set2CenterHeight(element)
 {
@@ -219,9 +215,6 @@ function Set2CenterHeight(element)
     const result = ParentTopContent + ResultTopInContent
 
     element.style.top = String(result) + "px"
-
-    // let height = element.parentElement.clientHeight / 100 * value
-    // element.style.top = String(height) + "px"
 }
 
 document.body.onresize = function()
@@ -229,4 +222,10 @@ document.body.onresize = function()
     Set2CenterWidth(document.getElementById("description"))
     Set2CenterHeight(document.getElementById("description"))
 }
-document.body.onresize() //terapkan perubahan pertama kali
+
+window.addEventListener("DOMContentLoaded", function(event)
+{
+    window.onscroll()
+    document.body.onresize() //terapkan perubahan pertama kali
+}
+)
