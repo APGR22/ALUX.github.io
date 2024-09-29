@@ -105,7 +105,7 @@ function FormClose()
         nav.style.filter = main.style.filter = "none"
         main.style.pointerEvents = "auto"
         main.style.marginLeft = "0"
-        main.style.marginTop = "0"
+        main.style.marginTop = "6.48%"
         document.body.style.overflow = "visible"
 
         form_name.value = ""

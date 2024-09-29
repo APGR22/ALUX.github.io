@@ -13,7 +13,7 @@
     <!-- Tambahkan kode kalian di sini -->
     <nav>
         <a id="link" href="https://skilvul.com">
-            <img id="link-img" src="https://drive.google.com/thumbnail?id=1FoyUxCGqoXnaUhNmX4oilY3CSxvUV3hm" style="width: 46%;">
+            <img id="link-img" src="https://drive.google.com/thumbnail?id=1FoyUxCGqoXnaUhNmX4oilY3CSxvUV3hm" style="width: 46%;"> <!--milik saya-->
         </a>
         <subnav>
             <input id="search" placeholder="Cari...">
@@ -26,27 +26,27 @@
     <main id="main">
         <div id="headline-container">
             <div id="headline-img">
-                <div class="headline-img-crop"><img src="https://datatopics.worldbank.org/what-a-waste/img/v3_waste_disposal_site.jpg" width="122%" style="margin-left: -10%;"></div>
-                <div class="headline-img-crop"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="122%" style="margin-left: -15%;"></div>
+                <div class="headline-img-crop"><img src="https://datatopics.worldbank.org/what-a-waste/img/v3_waste_disposal_site.jpg" width="122%" style="margin-left: -10%;"></div> <!--https://datatopics.worldbank.org/what-a-waste/tackling_increasing_plastic_waste.html-->
+                <div class="headline-img-crop"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="122%" style="margin-left: -15%;"></div> <!--https://unsplash.com/photos/photo-of-woman-holding-white-and-black-paper-bags-_3Q3tsJ01nc-->
             </div>
             <p id="description">
                 <span class="headline-keburukan">Tidak bernilai </span>
                 <span class="headline-kebaikan">menjadi bernilai</span>
                 <br>
                 <span class="headline-description">Sampah merupakan 
-                    <span class="color-white-bg-red">kesalahan</span>
+                    <span class="headline-kesalahan">kesalahan</span>
                 </span>
             </p>
         </div>
         <div id="rangkuman">
             <p>
                 Sampah merupakan benda tidak berguna dan tidak disukai bagi masyarakat.<br>
-                Sebagian besar masyarakat <span class="color-white-bg-red">lebih mempedulikan diri</span> mereka sendiri<br>
+                Sebagian besar masyarakat <span class="color-red">lebih mempedulikan diri</span> mereka sendiri<br>
                 dibanding lingkungan.
             </p>
             <p>
                 Kami, sekelompok pemuda desainer,<br>
-                ingin menunjukkan pada dunia bahwa mereka <span class="color-white-bg-red">salah!</span><br>
+                ingin menunjukkan pada dunia bahwa mereka <span class="color-red">salah!</span><br>
                 Kami akan membuat mereka tidak sadar bahwa mereka<br>
                 menggunakan apa yang mereka tidak sukai.
             </p>
@@ -91,11 +91,16 @@
 
     <div id="formulir">
         <a id="form-close" onclick="FormClose()">&#x2716</a>
-        <img class="form-img" src="https://www.color-meanings.com/wp-content/uploads/black-color-meaning-symbolism-infographic-1024x768.png" width="50%">
+        <div class="form-img">
+            <p>
+                Ciptakan desain impianmu dengan<br>
+                barang disekitarmu
+            </p>
+        </div>
         <form id="form-isian"><br>
             <input id="name" placeholder="Nama"><br>
             <input id="city" placeholder="Kota"><br>
-            <input id="email" placeholder="Email"><br>
+            <input id="email" type="email" placeholder="Email"><br>
             <input id="zip-code" type="number" placeholder="Zip code"><br>
             <label id="check" onclick="LabelChecked()">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
             <input id="status" type="checkbox"><br>
