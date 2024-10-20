@@ -1,4 +1,7 @@
-// Tambahkan kode JavaScript kalian di file ini
+//set as local
+{
+    
+includeHTML()
 
 function handleGetFormData()
 {
@@ -51,8 +54,6 @@ document.getElementById("form-isian").addEventListener("submit", FormToSubmit)
 //self
 
 const nav = document.querySelector("nav")
-const link_img = document.getElementById("link-img")
-const search = document.getElementById("search")
 const main = document.getElementById("main")
 const footer = document.querySelector("footer")
 const form = document.getElementById("formulir")
@@ -138,56 +139,6 @@ function CTA()
     form.classList.add("formulir-muncul")
 }
 
-window.onscroll = function()
-{
-    const kondisi = document.documentElement.scrollTop > 10
-    const ukuran_normal = link_img.style.width === "46%"
-    const ukuran_kecil = link_img.style.width === "37%"
-
-    if (kondisi && ukuran_normal)
-    {
-        nav.classList.add("nav-onscroll")
-        nav.classList.remove("nav-normal")
-
-        link_img.classList.add("link-img-onscroll")
-        link_img.classList.remove("link-img-normal")
-        link_img.style.width = "37%"
-    }
-    else if (!kondisi && ukuran_kecil)
-    {
-        nav.classList.add("nav-normal")
-        nav.classList.remove("nav-onscroll")
-
-        link_img.classList.add("link-img-normal")
-        link_img.classList.remove("link-img-onscroll")
-        link_img.style.width = "46%"
-    }
-}
-
-let SearchBarOpen = true;
-function SearchBar()
-{
-    if (SearchBarOpen)
-    {
-        search.style.visibility = "visible"
-        search.classList.add("search-bar-open")
-        search.classList.remove("search-bar-close")
-        search.onanimationend = function(){}
-    }
-    else
-    {
-        search.classList.add("search-bar-close")
-        search.classList.remove("search-bar-open")
-        search.onanimationend = function()
-        {
-            search.style.visibility = "hidden"
-        }
-    }
-
-    SearchBarOpen = !SearchBarOpen
-}
-search.style.visibility = "hidden"
-
 function Set2CenterWidth(element)
 {
     const ParentLeft = element.parentElement.offsetLeft
@@ -229,3 +180,5 @@ window.addEventListener("DOMContentLoaded", function(event)
     document.body.onresize() //terapkan perubahan pertama kali
 }
 )
+
+}
