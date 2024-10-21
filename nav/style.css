@@ -3,15 +3,6 @@
     --nav-animation-duration: 200ms;
 }
 
-.nav-onscroll
-{
-    font-size: 1.4vw;
-}
-.nav-normal
-{
-    font-size: 2vw;
-}
-
 nav
 {
     background-color: rgb(0, 0, 0);

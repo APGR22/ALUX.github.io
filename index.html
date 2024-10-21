@@ -3,77 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="nav.css" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav/style.css">
+    <link rel="stylesheet" type="text/css" href="hero/style.css">
+    <link rel="stylesheet" type="text/css" href="main/style.css">
+    <link rel="stylesheet" type="text/css" href="form/style.css">
+    <script src="include.js"></script>
     <script src="global.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--untuk search-icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for the search-icon-->
 </head>
 <body>
-    <nav>
-        <a id="link" href="https://skilvul.com">
-            <img id="link-img" src="https://drive.google.com/thumbnail?id=1FoyUxCGqoXnaUhNmX4oilY3CSxvUV3hm" style="width: 46%;"> <!--milik saya-->
-        </a>
-        <subnav>
-            <input id="search" placeholder="Cari...">
-            <button id="search-icon" class="fa fa-search" onclick="SearchBar()"></button>
-            <a href="https://skilvul.com">Produk</a>
-            <a href="https://skilvul.com">Tentang</a>
-            <a onclick="CTA()" id="nav-gabung">Gabung</a>
-        </subnav>
-    </nav>
-    <main id="main">
-        <div id="headline-container">
-            <div id="headline-img">
-                <div class="headline-img-crop"><img src="https://datatopics.worldbank.org/what-a-waste/img/v3_waste_disposal_site.jpg" width="122%" style="margin-left: -10%;"></div> <!--https://datatopics.worldbank.org/what-a-waste/tackling_increasing_plastic_waste.html-->
-                <div class="headline-img-crop"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="122%" style="margin-left: -15%;"></div> <!--https://unsplash.com/photos/photo-of-woman-holding-white-and-black-paper-bags-_3Q3tsJ01nc-->
-            </div>
-            <p id="description">
-                <span class="headline-keburukan">Tidak bernilai </span>
-                <span class="headline-kebaikan">menjadi bernilai</span>
-                <br>
-                <span class="headline-description">Sampah merupakan 
-                    <span class="headline-kesalahan">kesalahan</span>
-                </span>
-            </p>
-        </div>
-        <div id="rangkuman">
-            <p>
-                Sampah merupakan benda tidak berguna dan tidak disukai bagi masyarakat.<br>
-                Sebagian besar masyarakat <span class="color-red">lebih mempedulikan diri</span> mereka sendiri<br>
-                dibanding lingkungan.
-            </p>
-            <p>
-                Kami, sekelompok pemuda desainer,<br>
-                ingin menunjukkan pada dunia bahwa mereka <span class="color-red">salah!</span><br>
-                Kami akan membuat mereka tidak sadar bahwa mereka<br>
-                menggunakan apa yang mereka tidak sukai.
-            </p>
-            <p>
-                Kami membuat <span class="color-white-bg-black">fashion</span> untuk<br>
-                meningkatkan kepercayaan diri dan mendukung lingkungan.
-            </p>
-        </div>
-        <div id="hasil">
-            <b>Hasil</b>
-            <div>
-                <div><img src="https://blackdoctor.org/wp-content/uploads/2015/10/donnyblaylock-1.jpg" width="100%"></div> <!--https://blackdoctor.org/donnell-blaylock-jr-model-real-estate-agent/-->
-                <div><img src="https://benle.net/wp-content/uploads/2024/03/Mens-Fashion-Street-Style.webp" width="200%" style="margin-left: -80%;"></div> <!--https://benle.net/mens-fashion-street-style-urban-trendsetting-guide/-->
-                <div><img src="https://www.usmagazine.com/wp-content/uploads/2022/09/City-Girl-Fashion-Stock-Photo.jpg?crop=0px%2C49px%2C2000px%2C1131px&resize=1000%2C563&quality=86&strip=all" width="200%"></div> <!--https://www.usmagazine.com/shop-with-us/news/15-fashion-pieces-for-city-girl-fall-style/-->
-                <div><img src="https://img.freepik.com/free-photo/fashion-portrait-young-elegant-woman_1328-2691.jpg" width="100%" style="margin-top: -23%;"></div> <!--https://www.freepik.com/free-photo/fashion-portrait-young-elegant-woman_6022015.htm#page=2&query=fashion&position=41&from_view=keyword&track=ais_hybrid&uuid=6c3cee45-39b6-45b5-be8a-8ef7b7eecba2-->
-                <div><img src="https://img.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_23-2149409723.jpg" width="160%" style="margin-left: -29%;"></div> <!--https://www.freepik.com/free-photo/full-shot-cool-people-wearing-chain-necklace_26411559.htm#query=fashion&position=3&from_view=keyword&track=ais_hybrid&uuid=6c3cee45-39b6-45b5-be8a-8ef7b7eecba2-->
-                <div><img src="https://static.honeykidsasia.com/wp-content/uploads/2016/02/teens-clothes-shopping-singapore-uniqlo-900x643.jpg" width="150%" style="margin-left: -27%;"></div> <!--https://honeykidsasia.com/shopping-boys-girls-tweens-teens-clothes-singapore/-->
-            </div>
-        </div>
-        <div id="CTA">
-            <a>
-                Mau berkontribusi juga?<br>
-                Gabung sekarang!
-            </a>
-            <button onclick="CTA()">Gabung</button>
-        </div>
-    </main>
+    <nav w3-include-html="nav/index.html"></nav>
+    <div id="hero" w3-include-html="hero/index.html"></div>
+    <main id="main" w3-include-html="main/index.html"></main>
 
     <footer>
         <a>Didukung oleh:</a>
@@ -89,29 +33,12 @@
         </div>
     </footer>
 
-    <div id="formulir">
-        <a id="form-close" onclick="FormClose()">&#x2716</a>
-        <div class="form-img">
-            <p>
-                Ciptakan desain impianmu dengan<br>
-                barang disekitarmu
-            </p>
-        </div>
-        <form id="form-isian"><br>
-            <input id="name" placeholder="Nama"><br>
-            <input id="city" placeholder="Kota"><br>
-            <input id="email" type="email" placeholder="Email"><br>
-            <input id="zip-code" type="number" placeholder="Zip code"><br>
-            <label id="check" onclick="LabelChecked()">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
-            <input id="status" type="checkbox"><br>
-            <button id="submit-form" type="submit">Submit</button><br>
-            <div id="warning"></div>
-        </form>
-    </div>
-
-    <div w3-include-html="hero.html"></div>
+    <div id="formulir" w3-include-html="form/index.html"></div>
 
     <script src="script.js"></script>
-    <script src="nav.js"></script>
+    <script src="nav/script.js"></script>
+    <script src="hero/script.js"></script>
+    <script src="main/script.js"></script>
+    <script src="form/script.js"></script>
 </body>
 </html>

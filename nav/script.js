@@ -20,6 +20,7 @@ window.onscroll = function()
         link_img.style.width = "46%"
     }
 }
+functionList.push(window.onscroll)
 
 let SearchBarOpen = true;
 function SearchBar()
