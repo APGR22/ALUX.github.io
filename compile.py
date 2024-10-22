@@ -71,11 +71,12 @@ def HTMLCompile(content: str, location: dict[str, list[str] | list[int] | int]):
         innerHTMLLocation = location["innerHTMLLocation"][index] + indexPlus
         HTMLContent = readFile(attributeValue)
 
+        intro = "\n<!--" + attributeValue + "-->"
         startLine = "\n" + getTab(2)
         endLine = "\n" + getTab(1)
         HTMLContent = HTMLContent.replace("\n", startLine)
 
-        HTMLContent = startLine + HTMLContent + endLine
+        HTMLContent = intro + startLine + HTMLContent + endLine
 
         content = stringInsert(content, innerHTMLLocation, HTMLContent)
 

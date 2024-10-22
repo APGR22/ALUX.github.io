@@ -11,23 +11,15 @@ function hasilImgTextHoverOpen(index)
 {
     const element = hasilImgText.item(index)
 
-    element.ontransitionstart = function(){}
     element.style.visibility = "visible"
     element.style.height = "100%"
     element.style.filter = "opacity(100%)"
-    element.ontransitionend = function()
-    {
-        element.style.background = "linier-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9))"
-    }
+    element.ontransitionend = function(){}
 }
 function hasilImgTextHoverClose(index)
 {
     const element = hasilImgText.item(index)
 
-    element.ontransitionstart = function()
-    {
-        element.style.background = "linier-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.99))"
-    }
     element.style.height = "0"
     element.style.filter = "opacity(0)"
     element.ontransitionend = function()
