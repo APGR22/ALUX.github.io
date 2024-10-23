@@ -37,6 +37,7 @@
 {
     border-radius: 0.9vw 0 0 0.9vw;
     background-image: url(https://img.freepik.com/free-photo/smiling-girl-after-shopping_23-2147688872.jpg); /*https://www.freepik.com/free-photo/smiling-girl-after-shopping_1367764.htm*/
+    background-repeat: no-repeat;
     width: 50%;
     height: 30vw;
     display: flex;

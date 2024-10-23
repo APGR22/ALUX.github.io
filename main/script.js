@@ -11,10 +11,8 @@ function hasilImgTextHoverOpen(index)
 {
     const element = hasilImgText.item(index)
 
-    element.style.visibility = "visible"
     element.style.height = "100%"
     element.style.filter = "opacity(100%)"
-    element.ontransitionend = function(){}
 }
 function hasilImgTextHoverClose(index)
 {
@@ -22,10 +20,6 @@ function hasilImgTextHoverClose(index)
 
     element.style.height = "0"
     element.style.filter = "opacity(0)"
-    element.ontransitionend = function()
-    {
-        element.style.visibility = "hidden"
-    }
 }
 
 function hasilInit()
